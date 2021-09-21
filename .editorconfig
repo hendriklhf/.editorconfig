@@ -118,6 +118,11 @@ csharp_space_before_open_square_brackets = false
 csharp_space_between_empty_square_brackets = false
 csharp_space_between_square_brackets = false
 
+csharp_preserve_single_line_statements = false
+csharp_preserve_single_line_blocks = true
+
+csharp_using_directive_placement = outside_namespace
+
 dotnet_style_prefer_auto_properties=true:warning
 dotnet_style_prefer_conditional_expression_over_assignment=true:none
 dotnet_style_prefer_conditional_expression_over_return=false:warning
