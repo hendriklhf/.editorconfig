@@ -144,6 +144,7 @@ dotnet_diagnostic.CA2211.severity = error
 dotnet_diagnostic.CS0162.severity = error
 dotnet_diagnostic.CS0168.severity = error
 dotnet_diagnostic.CS0219.severity = error
+dotnet_diagnostic.CS0659.severity = silent
 dotnet_diagnostic.CS8321.severity = error
 
 dotnet_diagnostic.IDE0003.severity = error
@@ -167,6 +168,7 @@ dotnet_diagnostic.IDE0058.severity = silent
 dotnet_diagnostic.IDE0059.severity = error
 dotnet_diagnostic.IDE0060.severity = silent
 dotnet_diagnostic.IDE0071.severity = error
+dotnet_diagnostic.IDE0079.severity = error
 dotnet_diagnostic.IDE0090.severity = error
 dotnet_diagnostic.IDE0100.severity = error
 dotnet_diagnostic.IDE0120.severity = suggestion
