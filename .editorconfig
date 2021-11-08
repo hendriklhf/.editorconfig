@@ -154,7 +154,9 @@ dotnet_diagnostic.CS0693.severity = error
 dotnet_diagnostic.CS1988.severity = error
 dotnet_diagnostic.CS4014.severity = error
 dotnet_diagnostic.CS8321.severity = error
+dotnet_diagnostic.CS8509.severity = error
 
+dotnet_diagnostic.IDE0002.severity = error
 dotnet_diagnostic.IDE0003.severity = error
 dotnet_diagnostic.IDE0004.severity = error
 dotnet_diagnostic.IDE0005.severity = error
