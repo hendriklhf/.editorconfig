@@ -1,9 +1,14 @@
 root = true
 
+[*]
+
+end_of_line = crlf
+insert_final_newline = true
+
 [*.cs]
 
+indent_style = space
 indent_size = 4
-insert_final_newline = true
 
 dotnet_sort_system_directives_first = true
 
@@ -191,3 +196,8 @@ dotnet_diagnostic.IDE0100.severity = error
 dotnet_diagnostic.IDE0120.severity = error
 dotnet_diagnostic.IDE0180.severity = error
 dotnet_diagnostic.IDE1006.severity = error
+
+[*.go]
+
+indent_style = tab
+indent_size = 4
