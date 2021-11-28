@@ -161,6 +161,7 @@ dotnet_diagnostic.CS8509.severity = error
 dotnet_diagnostic.CS8600.severity = error
 dotnet_diagnostic.CS8602.severity = error
 dotnet_diagnostic.CS8603.severity = error
+dotnet_diagnostic.CS8622.severity = error
 dotnet_diagnostic.CS8765.severity = error
 
 dotnet_diagnostic.IDE0002.severity = error
