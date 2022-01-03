@@ -214,6 +214,11 @@ dotnet_diagnostic.IDE0120.severity = error
 dotnet_diagnostic.IDE0180.severity = error
 dotnet_diagnostic.IDE1006.severity = error
 
+[*.csproj;*.sln]
+indent_style = space
+ident_size = 2
+insert_final_newline = true
+
 [*.go]
 indent_style = tab
 indent_size = 4
