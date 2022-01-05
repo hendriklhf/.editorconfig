@@ -217,7 +217,7 @@ dotnet_diagnostic.IDE1006.severity = error
 
 [*.{csproj,sln}]
 indent_style = space
-ident_size = 2
+indent_size = 2
 insert_final_newline = true
 
 [*.go]
