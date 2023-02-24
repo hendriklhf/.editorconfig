@@ -11,6 +11,7 @@ max_line_length = 250
 
 [*.cs]
 dotnet_diagnostic.bc42024.severity = error
+dotnet_diagnostic.ca1069.severity = error
 dotnet_diagnostic.ca1304.severity = silent
 dotnet_diagnostic.ca1305.severity = silent
 dotnet_diagnostic.ca1716.severity = silent
@@ -82,7 +83,7 @@ dotnet_diagnostic.cs1957.severity = error
 dotnet_diagnostic.cs1981.severity = error
 dotnet_diagnostic.cs1988.severity = error
 dotnet_diagnostic.cs1998.severity = error
-dotnet_diagnostic.cs4014.severity = hint
+dotnet_diagnostic.cs4014.severity = suggestion
 dotnet_diagnostic.cs7022.severity = error
 dotnet_diagnostic.cs7023.severity = error
 dotnet_diagnostic.cs7095.severity = error
