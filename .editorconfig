@@ -213,6 +213,7 @@ dotnet_diagnostic.ide0090.severity = error
 dotnet_diagnostic.ide0100.severity = error
 dotnet_diagnostic.ide0120.severity = error
 dotnet_diagnostic.ide0180.severity = error
+dotnet_diagnostic.ide0251.severity = error
 dotnet_diagnostic.ide0270.severity = suggestion
 dotnet_diagnostic.ide1006.severity = error
 dotnet_diagnostic.syslib1045.severity = error
