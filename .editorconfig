@@ -17,6 +17,7 @@ dotnet_diagnostic.ca1305.severity = silent
 dotnet_diagnostic.ca1507.severity = error
 dotnet_diagnostic.ca1716.severity = silent
 dotnet_diagnostic.ca1805.severity = silent
+dotnet_diagnostic.ca1806.severity = error
 dotnet_diagnostic.ca1816.severity = error
 dotnet_diagnostic.ca1821.severity = error
 dotnet_diagnostic.ca1822.severity = silent
