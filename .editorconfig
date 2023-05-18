@@ -31,6 +31,7 @@ dotnet_diagnostic.ca1832.severity = error
 dotnet_diagnostic.ca1834.severity = error
 dotnet_diagnostic.ca1836.severity = error
 dotnet_diagnostic.ca1852.severity = warning
+dotnet_diagnostic.ca1861.severity = error
 dotnet_diagnostic.ca2000.severity = error
 dotnet_diagnostic.ca2012.severity = error
 dotnet_diagnostic.ca2208.severity = error
