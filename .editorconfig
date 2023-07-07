@@ -12,6 +12,8 @@ max_line_length = 250
 # dotnet_code_quality.CAXXXX.api_surface = private, internal, public
 
 [*.cs]
+dotnet_code_quality.ca1852.ignore_internalsvisibleto = true
+
 dotnet_diagnostic.bc42024.severity = error
 dotnet_diagnostic.ca1001.severity = error
 dotnet_diagnostic.ca1002.severity = none
