@@ -402,6 +402,7 @@ dotnet_diagnostic.ide0160.severity = none
 dotnet_diagnostic.ide0161.severity = error
 dotnet_diagnostic.ide0170.severity = error
 dotnet_diagnostic.ide0180.severity = error
+dotnet_diagnostic.ide0200.severity = error
 dotnet_diagnostic.ide0250.severity = error
 dotnet_diagnostic.ide0251.severity = error
 dotnet_diagnostic.ide0270.severity = error
@@ -519,3 +520,7 @@ csharp_using_directive_placement = outside_namespace
 [*.json]
 indent_style = space
 indent_size = 2
+
+# TODO: Formatting https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0055
+# TODO: https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0047-ide0048
+# TODO: https://learn.microsoft.com/en-us/dotnet/fundamentals/syslib-diagnostics/source-generator-overview
