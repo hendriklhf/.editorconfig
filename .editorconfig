@@ -176,6 +176,7 @@ dotnet_diagnostic.ca2254.severity = error
 dotnet_diagnostic.ca2256.severity = error
 dotnet_diagnostic.ca2259.severity = error
 dotnet_diagnostic.ca2260.severity = error
+dotnet_diagnostic.ca2261.severity = error
 dotnet_diagnostic.cs0067.severity = error
 dotnet_diagnostic.cs0078.severity = none
 dotnet_diagnostic.cs0108.severity = error
