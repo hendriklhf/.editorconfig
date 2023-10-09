@@ -123,6 +123,7 @@ dotnet_diagnostic.ca1859.severity = error
 dotnet_diagnostic.ca1860.severity = error
 dotnet_diagnostic.ca1861.severity = error
 dotnet_diagnostic.ca1862.severity = error
+dotnet_diagnostic.ca1862.severity = error
 dotnet_diagnostic.ca1864.severity = error
 dotnet_diagnostic.ca1865.severity = error
 dotnet_diagnostic.ca1866.severity = error
@@ -529,6 +530,7 @@ csharp_prefer_simple_using_statement = true
 csharp_using_directive_placement = outside_namespace
 
 [*.json]
+indent_style = space
 indent_size = 2
 
 # TODO: Formatting https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0055
