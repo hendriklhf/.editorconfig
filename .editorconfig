@@ -124,6 +124,12 @@ dotnet_diagnostic.ca1860.severity = error
 dotnet_diagnostic.ca1861.severity = error
 dotnet_diagnostic.ca1862.severity = error
 dotnet_diagnostic.ca1864.severity = error
+dotnet_diagnostic.ca1865.severity = error
+dotnet_diagnostic.ca1866.severity = error
+dotnet_diagnostic.ca1867.severity = error
+dotnet_diagnostic.ca1868.severity = error
+dotnet_diagnostic.ca1869.severity = error
+dotnet_diagnostic.ca1870.severity = error
 dotnet_diagnostic.ca2000.severity = error
 dotnet_diagnostic.ca2002.severity = error
 dotnet_diagnostic.ca2007.severity = none
@@ -348,7 +354,7 @@ dotnet_diagnostic.ide0024.severity = none
 dotnet_diagnostic.ide0025.severity = error
 dotnet_diagnostic.ide0026.severity = error
 dotnet_diagnostic.ide0027.severity = error
-dotnet_diagnostic.ide0028.severity = error
+dotnet_diagnostic.ide0028.severity = suggestion # error again
 dotnet_diagnostic.ide0029.severity = error
 dotnet_diagnostic.ide0030.severity = error
 dotnet_diagnostic.ide0031.severity = error
@@ -523,7 +529,6 @@ csharp_prefer_simple_using_statement = true
 csharp_using_directive_placement = outside_namespace
 
 [*.json]
-indent_style = space
 indent_size = 2
 
 # TODO: Formatting https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0055
