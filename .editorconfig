@@ -30,6 +30,7 @@ dotnet_diagnostic.ca1028.severity = error
 dotnet_diagnostic.ca1030.severity = error
 dotnet_diagnostic.ca1036.severity = error
 dotnet_diagnostic.ca1040.severity = error
+dotnet_diagnostic.ca1041.severity = error
 dotnet_diagnostic.ca1043.severity = none
 dotnet_diagnostic.ca1044.severity = error
 dotnet_diagnostic.ca1047.severity = error
