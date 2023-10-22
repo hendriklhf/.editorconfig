@@ -40147,8 +40147,29 @@ dotnet_naming_style.async_methods_style.capitalization = pascal_case
 dotnet_naming_style.async_methods_style.required_suffix = Async
 
 # naming: parameters
+dotnet_naming_rule.parameters_rule.severity = error
+dotnet_naming_rule.parameters_rule.symbols = parameters
+dotnet_naming_rule.parameters_rule.style = parameters_style
+dotnet_naming_symbols.parameters.applicable_kinds = parameter
+dotnet_naming_symbols.parameters.applicable_accessibilities = *
+dotnet_naming_style.parameters_style.capitalization = camel_case
 
 # naming: locals
+dotnet_naming_rule.locals_rule.severity = error
+dotnet_naming_rule.locals_rule.symbols = locals
+dotnet_naming_rule.locals_rule.style = locals_style
+dotnet_naming_symbols.locals.applicable_kinds = local
+dotnet_naming_symbols.locals.applicable_accessibilities = local
+dotnet_naming_style.locals_style.capitalization = camel_case
+
+# naming: const locals
+dotnet_naming_rule.const_locals_rule.severity = error
+dotnet_naming_rule.const_locals_rule.symbols = const_locals
+dotnet_naming_rule.const_locals_rule.style = const_locals_style
+dotnet_naming_symbols.const_locals.applicable_kinds = local
+dotnet_naming_symbols.const_locals.applicable_accessibilities = local
+dotnet_naming_symbols.const_locals.required_modifiers = const
+dotnet_naming_style.const_locals_style.capitalization = camel_case
 
 # naming: public consts
 dotnet_naming_rule.public_consts_rule.severity = error
@@ -40168,15 +40189,6 @@ dotnet_naming_symbols.non_public_consts.applicable_accessibilities = private, pr
 dotnet_naming_symbols.non_public_consts.required_modifiers = const
 dotnet_naming_style.non_public_consts_style.capitalization = camel_case
 dotnet_naming_style.non_public_consts_style.required_prefix = _
-
-# naming: const locals
-dotnet_naming_rule.const_locals_rule.severity = error
-dotnet_naming_rule.const_locals_rule.symbols = const_locals
-dotnet_naming_rule.const_locals_rule.style = const_locals_style
-dotnet_naming_symbols.const_locals.applicable_kinds = local
-dotnet_naming_symbols.const_locals.applicable_accessibilities = local
-dotnet_naming_symbols.const_locals.required_modifiers = const
-dotnet_naming_style.const_locals_style.capitalization = camel_case
 
 # naming: non-public instance fields
 dotnet_naming_rule.non_public_instance_fields_rule.severity = error
