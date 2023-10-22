@@ -40069,43 +40069,72 @@ csharp_new_line_before_members_in_object_initializers = false
 csharp_new_line_before_members_in_anonymous_types = false
 csharp_new_line_between_query_expression_clauses = true
 
-# naming: public const fields
-dotnet_naming_rule.public_const_fields_rule.severity = error
-dotnet_naming_rule.public_const_fields_rule.symbols = public_const_fields
-dotnet_naming_rule.public_const_fields_rule.style = public_const_fields_style
-dotnet_naming_symbols.public_const_fields.applicable_kinds = field
-dotnet_naming_symbols.public_const_fields.applicable_accessibilities = public, internal, protected, protected_internal
-dotnet_naming_symbols.public_const_fields.required_modifiers = const
-dotnet_naming_style.public_const_fields_style.capitalization = pascal_case
+# naming: namespace
+dotnet_naming_rule.namespace_rule.severity = error
+dotnet_naming_rule.namespace_rule.symbols = namespaces
+dotnet_naming_rule.namespace_rule.style = namespaces_style
+dotnet_naming_symbols.namespaces.applicable_kinds = namespace
+dotnet_naming_symbols.namespaces.applicable_accessibilities = *
+dotnet_naming_style.namespaces_style.capitalization = pascal_case
 
-# naming: non-public const fields
-dotnet_naming_rule.non_public_const_fields_rule.severity = error
-dotnet_naming_rule.non_public_const_fields_rule.symbols = non_public_const_fields
-dotnet_naming_rule.non_public_const_fields_rule.style = non_public_const_fields_style
-dotnet_naming_symbols.non_public_const_fields.applicable_kinds = field
-dotnet_naming_symbols.non_public_const_fields.applicable_accessibilities = private, private_protected
-dotnet_naming_symbols.non_public_const_fields.required_modifiers = const
-dotnet_naming_style.non_public_const_fields_style.capitalization = camel_case
-dotnet_naming_style.non_public_const_fields_style.required_prefix = _
+# naming: types (class, struct, enum)
+dotnet_naming_rule.types_rule.severity = error
+dotnet_naming_rule.types_rule.symbols = types
+dotnet_naming_rule.types_rule.style = types_style
+dotnet_naming_symbols.types.applicable_kinds = class, struct, enum
+dotnet_naming_symbols.types.applicable_accessibilities = *
+dotnet_naming_style.types_style.capitalization = pascal_case
 
-# naming: const locals
-dotnet_naming_rule.const_locals_rule.severity = error
-dotnet_naming_rule.const_locals_rule.symbols = const_locals
-dotnet_naming_rule.const_locals_rule.style = const_locals_style
-dotnet_naming_symbols.const_locals.applicable_kinds = local
-dotnet_naming_symbols.const_locals.applicable_accessibilities = local
-dotnet_naming_symbols.const_locals.required_modifiers = const
-dotnet_naming_style.const_locals_style.capitalization = camel_case
+# naming: interfaces
+dotnet_naming_rule.interfaces_rule.severity = error
+dotnet_naming_rule.interfaces_rule.symbols = interfaces
+dotnet_naming_rule.interfaces_rule.style = interfaces_style
+dotnet_naming_symbols.interfaces.applicable_kinds = interface
+dotnet_naming_symbols.interfaces.applicable_accessibilities = *
+dotnet_naming_style.interfaces_style.capitalization = pascal_case
+dotnet_naming_style.interfaces_style.required_prefix = I
 
-# naming: non-public static fields
-dotnet_naming_rule.non_public_static_fields_rule.severity = error
-dotnet_naming_rule.non_public_static_fields_rule.symbols = non_public_static_fields
-dotnet_naming_rule.non_public_static_fields_rule.style = non_public_static_fields_style
-dotnet_naming_symbols.non_public_static_fields.applicable_kinds = field
-dotnet_naming_symbols.non_public_static_fields.applicable_accessibilities = internal, private, private_protected
-dotnet_naming_symbols.non_public_static_fields.required_modifiers = static
-dotnet_naming_style.non_public_static_fields_style.capitalization = camel_case
-dotnet_naming_style.non_public_static_fields_style.required_prefix = s_
+# naming: properties
+dotnet_naming_rule.properties_rule.severity = error
+dotnet_naming_rule.properties_rule.symbols = properties
+dotnet_naming_rule.properties_rule.style = properties_style
+dotnet_naming_symbols.properties.applicable_kinds = properties
+dotnet_naming_symbols.properties.applicable_accessibilities = *
+dotnet_naming_style.properties_style.capitalization = pascal_case
+
+# naming: events
+dotnet_naming_rule.events_rule.severity = error
+dotnet_naming_rule.events_rule.symbols = events
+dotnet_naming_rule.events_rule.style = events_style
+dotnet_naming_symbols.events.applicable_kinds = event
+dotnet_naming_symbols.events.applicable_accessibilities = *
+dotnet_naming_style.events_style.capitalization = pascal_case
+dotnet_naming_style.events_style.required_prefix = On
+
+# naming: delegate
+dotnet_naming_rule.delegates_rule.severity = error
+dotnet_naming_rule.delegates_rule.symbols = delegates
+dotnet_naming_rule.delegates_rule.style = delegates_style
+dotnet_naming_symbols.delegates.applicable_kinds = delegate
+dotnet_naming_symbols.delegates.applicable_accessibilities = *
+dotnet_naming_style.delegates_style.capitalization = pascal_case
+
+# naming: type parameters
+dotnet_naming_rule.type_parameters_rule.severity = error
+dotnet_naming_rule.type_parameters_rule.symbols = type_parameters
+dotnet_naming_rule.type_parameters_rule.style = type_parameters_style
+dotnet_naming_symbols.type_parameters.applicable_kinds = type_parameter
+dotnet_naming_symbols.type_parameters.applicable_accessibilities = *
+dotnet_naming_style.type_parameters_style.capitalization = pascal_case
+dotnet_naming_style.type_parameters_style.required_prefix = T
+
+# naming: methods and local methods
+dotnet_naming_rule.methods_rule.severity = error
+dotnet_naming_rule.methods_rule.symbols = methods
+dotnet_naming_rule.methods_rule.style = methods_style
+dotnet_naming_symbols.methods.applicable_kinds = method, local_function
+dotnet_naming_symbols.methods.applicable_accessibilities = *
+dotnet_naming_style.methods_style.capitalization = pascal_case
 
 # naming: async methods
 dotnet_naming_rule.async_methods_rule.severity = error
@@ -40116,6 +40145,57 @@ dotnet_naming_symbols.async_methods.applicable_accessibilities = *
 dotnet_naming_symbols.async_methods.required_modifiers = async
 dotnet_naming_style.async_methods_style.capitalization = pascal_case
 dotnet_naming_style.async_methods_style.required_suffix = Async
+
+# naming: parameters
+
+# naming: locals
+
+# naming: public consts
+dotnet_naming_rule.public_consts_rule.severity = error
+dotnet_naming_rule.public_consts_rule.symbols = public_consts
+dotnet_naming_rule.public_consts_rule.style = public_consts_style
+dotnet_naming_symbols.public_consts.applicable_kinds = field
+dotnet_naming_symbols.public_consts.applicable_accessibilities = public, internal, protected, protected_internal
+dotnet_naming_symbols.public_consts.required_modifiers = const
+dotnet_naming_style.public_consts_style.capitalization = pascal_case
+
+# naming: non-public consts
+dotnet_naming_rule.non_public_consts_rule.severity = error
+dotnet_naming_rule.non_public_consts_rule.symbols = non_public_consts
+dotnet_naming_rule.non_public_consts_rule.style = non_public_consts_style
+dotnet_naming_symbols.non_public_consts.applicable_kinds = field
+dotnet_naming_symbols.non_public_consts.applicable_accessibilities = private, private_protected
+dotnet_naming_symbols.non_public_consts.required_modifiers = const
+dotnet_naming_style.non_public_consts_style.capitalization = camel_case
+dotnet_naming_style.non_public_consts_style.required_prefix = _
+
+# naming: const locals
+dotnet_naming_rule.const_locals_rule.severity = error
+dotnet_naming_rule.const_locals_rule.symbols = const_locals
+dotnet_naming_rule.const_locals_rule.style = const_locals_style
+dotnet_naming_symbols.const_locals.applicable_kinds = local
+dotnet_naming_symbols.const_locals.applicable_accessibilities = local
+dotnet_naming_symbols.const_locals.required_modifiers = const
+dotnet_naming_style.const_locals_style.capitalization = camel_case
+
+# naming: non-public instance fields
+dotnet_naming_rule.non_public_instance_fields_rule.severity = error
+dotnet_naming_rule.non_public_instance_fields_rule.symbols = non_public_instance_fields
+dotnet_naming_rule.non_public_instance_fields_rule.style = non_public_instance_fields_style
+dotnet_naming_symbols.non_public_instance_fields.applicable_kinds = field
+dotnet_naming_symbols.non_public_instance_fields.applicable_accessibilities = internal, private, private_protected
+dotnet_naming_style.non_public_instance_fields_style.capitalization = camel_case
+dotnet_naming_style.non_public_instance_fields_style.required_prefix = _
+
+# naming: non-public static fields
+dotnet_naming_rule.non_public_static_fields_rule.severity = error
+dotnet_naming_rule.non_public_static_fields_rule.symbols = non_public_static_fields
+dotnet_naming_rule.non_public_static_fields_rule.style = non_public_static_fields_style
+dotnet_naming_symbols.non_public_static_fields.applicable_kinds = field
+dotnet_naming_symbols.non_public_static_fields.applicable_accessibilities = internal, private, private_protected
+dotnet_naming_symbols.non_public_static_fields.required_modifiers = static
+dotnet_naming_style.non_public_static_fields_style.capitalization = camel_case
+dotnet_naming_style.non_public_static_fields_style.required_prefix = s_
 
 dotnet_style_require_accessibility_modifiers = for_non_interface_members
 dotnet_style_readonly_field = true
