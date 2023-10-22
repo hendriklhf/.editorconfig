@@ -40069,6 +40069,54 @@ csharp_new_line_before_members_in_object_initializers = false
 csharp_new_line_before_members_in_anonymous_types = false
 csharp_new_line_between_query_expression_clauses = true
 
+# naming: public const fields
+dotnet_naming_rule.public_const_fields_rule.severity = error
+dotnet_naming_rule.public_const_fields_rule.symbols = public_const_fields
+dotnet_naming_rule.public_const_fields_rule.style = public_const_fields_style
+dotnet_naming_symbols.public_const_fields.applicable_kinds = field
+dotnet_naming_symbols.public_const_fields.applicable_accessibilities = public, internal, protected, protected_internal
+dotnet_naming_symbols.public_const_fields.required_modifiers = const
+dotnet_naming_style.public_const_fields_style.capitalization = pascal_case
+
+# naming: non-public const fields
+dotnet_naming_rule.non_public_const_fields_rule.severity = error
+dotnet_naming_rule.non_public_const_fields_rule.symbols = non_public_const_fields
+dotnet_naming_rule.non_public_const_fields_rule.style = non_public_const_fields_style
+dotnet_naming_symbols.non_public_const_fields.applicable_kinds = field
+dotnet_naming_symbols.non_public_const_fields.applicable_accessibilities = private, private_protected
+dotnet_naming_symbols.non_public_const_fields.required_modifiers = const
+dotnet_naming_style.non_public_const_fields_style.capitalization = camel_case
+dotnet_naming_style.non_public_const_fields_style.required_prefix = _
+
+# naming: const locals
+dotnet_naming_rule.const_locals_rule.severity = error
+dotnet_naming_rule.const_locals_rule.symbols = const_locals
+dotnet_naming_rule.const_locals_rule.style = const_locals_style
+dotnet_naming_symbols.const_locals.applicable_kinds = local
+dotnet_naming_symbols.const_locals.applicable_accessibilities = local
+dotnet_naming_symbols.const_locals.required_modifiers = const
+dotnet_naming_style.const_locals_style.capitalization = camel_case
+
+# naming: non-public static fields
+dotnet_naming_rule.non_public_static_fields_rule.severity = error
+dotnet_naming_rule.non_public_static_fields_rule.symbols = non_public_static_fields
+dotnet_naming_rule.non_public_static_fields_rule.style = non_public_static_fields_style
+dotnet_naming_symbols.non_public_static_fields.applicable_kinds = field
+dotnet_naming_symbols.non_public_static_fields.applicable_accessibilities = internal, private, private_protected
+dotnet_naming_symbols.non_public_static_fields.required_modifiers = static
+dotnet_naming_style.non_public_static_fields_style.capitalization = camel_case
+dotnet_naming_style.non_public_static_fields_style.required_prefix = s_
+
+# naming: async methods
+dotnet_naming_rule.async_methods_rule.severity = error
+dotnet_naming_rule.async_methods_rule.symbols = async_methods
+dotnet_naming_rule.async_methods_rule.style = async_methods_style
+dotnet_naming_symbols.async_methods.applicable_kinds = method, local_function
+dotnet_naming_symbols.async_methods.applicable_accessibilities = *
+dotnet_naming_symbols.async_methods.required_modifiers = async
+dotnet_naming_style.async_methods_style.capitalization = pascal_case
+dotnet_naming_style.async_methods_style.required_suffix = Async
+
 dotnet_style_require_accessibility_modifiers = for_non_interface_members
 dotnet_style_readonly_field = true
 dotnet_style_object_initializer = true
