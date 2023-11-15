@@ -9,10 +9,11 @@ indent_style = space
 indent_size = 4
 max_line_length = 150
 
-# dotnet_code_quality.CAXXXX.api_surface = private, internal, public
 
 [*.cs]
 dotnet_code_quality.ca1852.ignore_internalsvisibleto = true
+dotnet_code_quality.ca1815.api_surface = private, internal, public
+dotnet_code_quality.ca1819.api_surface = private, internal, public
 
 dotnet_diagnostic.ca0001.severity = error
 dotnet_diagnostic.ca0002.severity = error
