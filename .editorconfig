@@ -40170,7 +40170,7 @@ dotnet_naming_rule.const_locals_rule.style = const_locals_style
 dotnet_naming_symbols.const_locals.applicable_kinds = local
 dotnet_naming_symbols.const_locals.applicable_accessibilities = local
 dotnet_naming_symbols.const_locals.required_modifiers = const
-dotnet_naming_style.const_locals_style.capitalization = camel_case
+dotnet_naming_style.const_locals_style.capitalization = pascal_case
 
 # naming: public consts
 dotnet_naming_rule.public_consts_rule.severity = error
@@ -40188,8 +40188,7 @@ dotnet_naming_rule.non_public_consts_rule.style = non_public_consts_style
 dotnet_naming_symbols.non_public_consts.applicable_kinds = field
 dotnet_naming_symbols.non_public_consts.applicable_accessibilities = private, private_protected
 dotnet_naming_symbols.non_public_consts.required_modifiers = const
-dotnet_naming_style.non_public_consts_style.capitalization = camel_case
-dotnet_naming_style.non_public_consts_style.required_prefix = _
+dotnet_naming_style.non_public_consts_style.capitalization = pascal_case
 
 # naming: non-public instance fields
 dotnet_naming_rule.non_public_instance_fields_rule.severity = error
